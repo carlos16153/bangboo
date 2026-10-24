@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Descubre productos para tu día a día en Bangboo: tecnología, hogar y mucho más."
+    />
+    <meta name="theme-color" content="#f7f6f2" />
+    <title>Bangboo — cosas que hacen bien</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">
+      <span>Pequeños hallazgos, grandes días.</span>
+      <span class="announcement-note">Envíos estándar de 3 a 5 días</span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Bangboo, inicio">
+        <span class="brand-mark" aria-hidden="true">b.</span>
+        <span>bangboo<span class="brand-period">.</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#catalogo">Tienda</a>
+        <a href="#sobre-nosotros">Nuestra idea</a>
+      </nav>
+
+      <div class="header-actions">
+        <label class="search-box">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.8" cy="10.8" r="6.8"></circle>
+            <path d="m16 16 4.5 4.5"></path>
+          </svg>
+          <input id="search-input" type="search" placeholder="Buscar algo bonito" aria-label="Buscar productos" />
+        </label>
+        <button class="cart-button" id="open-cart" type="button" aria-label="Abrir carrito">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3.5 4.5h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4l1.5-6.1H6.2"></path>
+            <circle cx="10" cy="20" r="1"></circle>
+            <circle cx="18" cy="20" r="1"></circle>
+          </svg>
+          <span>Carrito</span>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> UNA TIENDA PARA TODOS LOS DÍAS</span>
+          <h1 id="hero-title">Lo bueno se<br />encuentra <em>sin buscarlo.</em></h1>
+          <p>Objetos útiles, detalles bien pensados y pequeños gustos para hacer más tuyo cada día.</p>
+          <a class="button button-dark" href="#catalogo">
+            Explorar la tienda
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"></path></svg>
+          </a>
+          <div class="hero-note">
+            <span class="note-stars" aria-hidden="true">✳</span>
+            <span>Una selección para vivirla, no guardarla.</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Selección de productos Bangboo">
+          <div class="hero-art-label"><span>objetos cotidianos</span><span>№ 01 — 25</span></div>
+          <div class="hero-image image-headphones">
+            <img
+              src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=85"
+              alt="Auriculares de diseño en color naranja"
+            />
+          </div>
+          <div class="hero-image image-vase">
+            <img
+              src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=700&q=85"
+              alt="Objetos decorativos para el hogar"
+            />
+          </div>
+          <div class="hero-sticker"><span>elige<br />lo que te<br />hace bien</span><span class="sticker-star">✳</span></div>
+          <div class="hero-art-caption">Una buena idea<br />para todos los días.</div>
+        </div>
+      </section>
+
+      <section class="trust-row" aria-label="Ventajas de comprar en Bangboo">
+        <div><span class="trust-icon">✳</span><span>Hallazgos que sí se usan</span></div>
+        <div><span class="trust-icon">↗</span><span>Compra fácil, a tu ritmo</span></div>
+        <div><span class="trust-icon">♡</span><span>Detalles para disfrutar</span></div>
+      </section>
+
+      <section class="catalog-section" id="catalogo">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">UN POCO DE TODO, CON INTENCIÓN</span>
+            <h2>La tienda <em>de todos los días.</em></h2>
+          </div>
+          <p>Encuentra eso que estabas buscando.<br />Y también eso que todavía no sabías.</p>
+        </div>
+
+        <div class="catalog-controls">
+          <div class="category-list" id="category-list" aria-label="Filtrar por categoría">
+            <button class="category-chip is-active" type="button" data-category="Todas">Todo</button>
+          </div>
+          <label class="sort-control">
+            <span>Ordenar por</span>
+            <select id="sort-select" aria-label="Ordenar productos">
+              <option value="featured">Recomendados</option>
+              <option value="price-low">Precio: menor a mayor</option>
+              <option value="price-high">Precio: mayor a menor</option>
+              <option value="name">Nombre</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="catalog-status" id="catalog-status" role="status" aria-live="polite">Cargando productos…</div>
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+
+      <section class="about-section" id="sobre-nosotros">
+        <span class="about-symbol" aria-hidden="true">b.</span>
+        <div>
+          <span class="eyebrow">MENOS RUIDO, MÁS COSAS BUENAS</span>
+          <h2>Elegir mejor también<br />puede ser <em>así de simple.</em></h2>
+        </div>
+        <p>En Bangboo reunimos objetos útiles, ideas frescas y pequeños detalles que hacen más amable la rutina. Sin complicaciones: solo cosas que vale la pena tener cerca.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#">
+        <span class="brand-mark" aria-hidden="true">b.</span>
+        <span>bangboo<span class="brand-period">.</span></span>
+      </a>
+      <span>Una tienda para los días de verdad.</span>
+      <a href="#catalogo">Volver arriba ↑</a>
+    </footer>
+
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title" aria-hidden="true">
+      <div class="drawer-header">
+        <div>
+          <span class="eyebrow">TUS BUENOS HALLAZGOS</span>
+          <h2 id="cart-title">Tu carrito <span id="drawer-count">(0)</span></h2>
+        </div>
+        <button class="icon-button" id="close-cart" type="button" aria-label="Cerrar carrito">×</button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty">
+        <span class="empty-bag" aria-hidden="true">♡</span>
+        <h3>Está esperando algo bueno.</h3>
+        <p>Agrega tus favoritos y los encontrarás aquí.</p>
+        <button class="text-link" id="continue-shopping" type="button">Seguir explorando →</button>
+      </div>
+      <div class="cart-footer" id="cart-footer" hidden>
+        <div class="cart-subtotal"><span>Subtotal</span><strong id="cart-subtotal">$0.00</strong></div>
+        <p>Envío e impuestos se coordinan al confirmar tu pedido.</p>
+        <button class="button button-dark checkout-button" id="checkout-button" type="button">
+          Copiar pedido
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"></path></svg>
+        </button>
+      </div>
+    </aside>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
