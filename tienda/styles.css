@@ -9,7 +9,9 @@
   --green-dark: #354333;
   --lime: #d8e29f;
   --orange: #d98965;
-  --serif: Georgia, "Times New Roman", serif;
+  --sans: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --display: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --serif: "Iowan Old Style", "Georgia", "Times New Roman", serif;
 }
 
 * {
@@ -24,7 +26,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -81,7 +83,7 @@ button {
   width: max-content;
   align-items: center;
   gap: 8px;
-  font-family: "Manrope", sans-serif;
+  font-family: var(--display);
   font-size: 21px;
   font-weight: 800;
   letter-spacing: -1.3px;
@@ -227,7 +229,7 @@ p {
 .section-heading h2,
 .about-section h2 {
   margin: 20px 0 16px;
-  font-family: "Manrope", sans-serif;
+  font-family: var(--display);
   font-size: clamp(40px, 5.1vw, 66px);
   font-weight: 500;
   letter-spacing: -0.065em;
@@ -598,7 +600,7 @@ p {
 .product-name {
   min-height: 36px;
   margin: 0 0 5px;
-  font-family: "Manrope", sans-serif;
+  font-family: var(--display);
   font-size: 12px;
   font-weight: 600;
   line-height: 1.45;
@@ -624,7 +626,7 @@ p {
 }
 
 .product-price {
-  font-family: "Manrope", sans-serif;
+  font-family: var(--display);
   font-size: 12px;
   font-weight: 700;
 }
@@ -648,7 +650,7 @@ p {
   display: block;
   margin-bottom: 8px;
   color: var(--ink);
-  font-family: "Manrope", sans-serif;
+  font-family: var(--display);
   font-size: 18px;
 }
 
@@ -670,7 +672,7 @@ p {
   border: 1px solid #cdd5be;
   border-radius: 50%;
   color: var(--green);
-  font-family: "Manrope", sans-serif;
+  font-family: var(--display);
   font-size: 52px;
   font-weight: 700;
   letter-spacing: -8px;
@@ -751,7 +753,7 @@ p {
 
 .drawer-header h2 {
   margin: 9px 0 0;
-  font-family: "Manrope", sans-serif;
+  font-family: var(--display);
   font-size: 25px;
   letter-spacing: -1px;
 }
@@ -795,7 +797,7 @@ p {
 
 .cart-line h3 {
   margin: 2px 0 5px;
-  font-family: "Manrope", sans-serif;
+  font-family: var(--display);
   font-size: 11px;
   line-height: 1.45;
 }
@@ -862,7 +864,7 @@ p {
 
 .cart-empty h3 {
   margin: 18px 0 7px;
-  font-family: "Manrope", sans-serif;
+  font-family: var(--display);
   font-size: 15px;
 }
 
@@ -893,7 +895,7 @@ p {
 }
 
 .cart-subtotal strong {
-  font-family: "Manrope", sans-serif;
+  font-family: var(--display);
   font-size: 17px;
 }
 
