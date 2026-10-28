@@ -3,7 +3,7 @@
   --paper: #f7f6f2;
   --white: #fffefa;
   --ink: #292d25;
-  --muted: #74766c;
+  --muted: #5d5f59;
   --line: #e7e5dc;
   --green: #53634b;
   --green-dark: #354333;
@@ -162,7 +162,7 @@ button {
 }
 
 .search-box input::placeholder {
-  color: #8c8d83;
+  color: #5d5f59;
 }
 
 .cart-button {
@@ -296,7 +296,7 @@ p {
   align-items: center;
   gap: 8px;
   margin-top: 36px;
-  color: #77796e;
+  color: #66685d;
   font-size: 10px;
 }
 
@@ -591,7 +591,7 @@ p {
 
 .product-category {
   margin-bottom: 6px;
-  color: #86877c;
+  color: #5b5d52;
   font-size: 8px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -633,7 +633,7 @@ p {
 
 .product-brand {
   overflow: hidden;
-  color: #88897f;
+  color: #5b5d52;
   font-size: 9px;
   text-overflow: ellipsis;
   white-space: nowrap;
