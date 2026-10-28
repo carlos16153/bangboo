@@ -3,7 +3,7 @@
   --paper: #f7f6f2;
   --white: #fffefa;
   --ink: #292d25;
-  --muted: #5d5f59;
+  --muted: #4d5149;
   --line: #e7e5dc;
   --green: #53634b;
   --green-dark: #354333;
@@ -113,7 +113,7 @@ button {
 
 .main-nav a,
 .site-footer > a:last-child {
-  color: #55584e;
+  color: #4d5149;
   font-size: 12px;
   transition: color 160ms ease;
 }
@@ -162,7 +162,7 @@ button {
 }
 
 .search-box input::placeholder {
-  color: #5d5f59;
+  color: #4d5149;
 }
 
 .cart-button {
@@ -296,7 +296,7 @@ p {
   align-items: center;
   gap: 8px;
   margin-top: 36px;
-  color: #66685d;
+  color: #4d5149;
   font-size: 10px;
 }
 
@@ -409,7 +409,7 @@ p {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #606258;
+  color: #4d5149;
   font-size: 10px;
 }
 
@@ -591,7 +591,7 @@ p {
 
 .product-category {
   margin-bottom: 6px;
-  color: #5b5d52;
+  color: #4d5149;
   font-size: 8px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -633,7 +633,7 @@ p {
 
 .product-brand {
   overflow: hidden;
-  color: #5b5d52;
+  color: #4d5149;
   font-size: 9px;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -687,7 +687,7 @@ p {
 .about-section > p {
   max-width: 340px;
   margin: 0;
-  color: #64685d;
+  color: #4d5149;
   font-size: 11px;
   line-height: 1.9;
 }
